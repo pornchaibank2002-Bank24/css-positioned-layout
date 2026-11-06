@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Positioned Layout Exercise 1 Bubble Tea Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kully-Qoo Bubble Tea Card</title>
+  
+  <!-- นำเข้าฟอนต์ Kanit จาก Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- เชื่อมโยงไปยังไฟล์ CSS -->
+  <link rel="stylesheet" href="bank.css">
 </head>
-
 <body>
-  <!-- Start coding here -->
-  <div>
-    <img src="./preview-img.jpeg" />
-    <div>Kully-Qoo Bubble Tea ตลาดปากน้ำ</div>
-    <div>ปากน้ำ</div>
-    <div></div>
-  </div>
-</body>
 
+  <!-- ตัวครอบการ์ดภายนอก (สร้างเส้นขอบสีขาว) -->
+  <div class="card-container">
+    <div class="card">
+      <!-- รูปภาพหลักของการ์ด -->
+      <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?q=80&w=800" alt="Kully-Qoo Bubble Tea" class="card-image">
+
+      <!-- ป้ายกำกับมุมขวาบน -->
+      <div class="badge-top-right">ปากน้ำ</div>
+
+      <!-- เงาโปร่งแสงด้านล่างและข้อความชื่อร้าน -->
+      <div class="card-overlay">
+        <h2 class="card-title">Kully-Qoo Bubble Tea ตลาดปากน้ำ</h2>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>

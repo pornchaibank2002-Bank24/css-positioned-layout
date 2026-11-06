@@ -1,0 +1,80 @@
+body {
+  font-family: "Kanit", sans-serif;
+  /* รวมการจัดวางหน้าจอและสีพื้นหลังเข้ากับ body เดิม */
+  background-color: #0d0f12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset ขอบตกแต่งสำหรับ Element ทั้งหมด */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Start coding here */
+
+/* 1. ตัวครอบภายนอก (ขอบสีขาว) */
+.card-container {
+  padding: 4px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 2. กรอบของการ์ด */
+.card {
+  position: relative;
+  width: 480px;
+  height: 270px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* 3. รูปภาพหลัก */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 4. ป้ายกำกับมุมขวาบน "ปากน้ำ" */
+.badge-top-right {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(60, 60, 60, 0.75);
+  color: #ffffff;
+  padding: 4px 14px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 2px;
+  backdrop-filter: blur(2px);
+}
+
+/* 5. เงาไล่เฉดสีด้านล่าง */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 6. ข้อความชื่อร้าน */
+.card-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
